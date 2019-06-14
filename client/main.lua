@@ -43,7 +43,7 @@ AddEventHandler('mythic_engine:client:StartEngineListen', function()
             elseif IsControlJustReleased(1, SearchKey) and canHotwire and canSearchForKey and not isAttemptingHotwire then
                 canSearchForKey = false
                 isSearching = true
-                SearchForKey(GetVehiclePedIsIn(GetPlayerPed(-1)), 35, 1), 35, 25)
+                SearchForKey(GetVehiclePedIsIn(GetPlayerPed(-1)), 35, 25)
             end
             
             local ped = GetPlayerPed(-1)
