@@ -1,6 +1,11 @@
 # Mythic Engine Control
 A small script that enables controlling the vehicle engine (F9 is default key), keep engine on while exiting car if engine was on, keeping door open while getting out if holding F, and having a hotwiring system that would require an event to allow a vehicles engine to run.
 
+Dependencies :
+
+- [Mythic Notify](https://github.com/mythicrp/mythic_notify)
+- Mythic Base - NOT PUBLICLY RELEASED
+
 ## How To Use:
 Using this by itself will find you unable to start the engine unless you get in while it is already on, or get lucky and the hotwire / search for key succeed.
 
@@ -24,4 +29,4 @@ AddEventHandler('baseevents:enteredVehicle', function(currentVehicle, currentSea
 end)
 ```
 
-NOTE : In this current form, this still has calls to my framework and created resources that are not available. If you do not know how to remove them, I'd suggest not using this. I am not in the business of converting stuff to ESX or vRP for people to copy & paste to their servers. If you don't know how to modify a resource to work on your server or don't have anyone that can, you shouldn't be running a server.
+>NOTE: As with most MythicRP releases at this point, this has several calls to Mythic Framework resources that have not (and may not) released publicly. This is intended as a **dev resource** at most and not a simple drag & drop to use on public servers. **Do not make any issues asking for it to be made to work on a public framework or why it isn't plug n' play.**
